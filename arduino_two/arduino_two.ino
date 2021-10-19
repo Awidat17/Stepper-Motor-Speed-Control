@@ -9,7 +9,7 @@ int readB; // read of bitB
 int readD; // read of bitB
 int readRes; // read of bitRes
 
-float freq = 80;
+float freq = 100;
 float time;
 
 void setup() {
@@ -19,7 +19,7 @@ void setup() {
   pinMode(bitRes, INPUT);
   pinMode(PUL, OUTPUT);
 
-  //Serial.begin(115200);
+  readD = LOW;
 }
 
 void loop() {
@@ -27,7 +27,7 @@ void loop() {
   while (1) {
     readA = digitalRead(bitA);
     readB = digitalRead(bitB);
-    readD = digitalRead(bitD);
+    //readD = digitalRead(bitD);
     readRes = digitalRead(bitRes);
     time = ftoms(freq);
 

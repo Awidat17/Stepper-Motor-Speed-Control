@@ -1,7 +1,7 @@
 int switchA = 2; // input of controller switch A
 int switchC = 3; // input of controller switch C
 int switchD = 5; // input of controller switch D
-// below outputs will be used as a 2-bit binary ouput
+// below outputs will be used as a 2-bit binary output
 int outA = 7; // switch C output first bit
 int outB = 8; // switch C output second bit
 int outD = 9; // switch D output bit
